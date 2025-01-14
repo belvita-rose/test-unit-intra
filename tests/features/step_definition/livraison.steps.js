@@ -17,8 +17,6 @@ Given('une commande de {float}$ pour un membre non-premium', function (montant) 
 });
 
 When('les frais de livraison sont calculés', function () {
-    // Les frais sont déjà calculés dans les étapes Given
-});
 
 Then('le montant des frais est {float}$', function (montantAttendu) {
     assert.strictEqual(fraisLivraison, montantAttendu);
